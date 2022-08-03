@@ -1,9 +1,4 @@
 # coding=utf-8
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
 # author Yunong Zhang
 
 import xlrd
@@ -264,11 +259,10 @@ if __name__ == '__main__':
     Entry(root, textvariable=content_index).place(x=130, y=320, width=30, height=30)
 
     var = tk.StringVar()
-    Combobox(root, state='readonly', textvariable=var, values=('包含', '包含（与）', '包含（或）', '截取')).place(x=20, y=350,
+    Combobox(root, state='readonly', textvariable=var, values=('包含', '包含（与）', '包含（或）')).place(x=20, y=350,
                                                                                                     width=100,
                                                                                                     height=30)
     Button(root, text="开始分类", command=open_write).place(x=282, y=350, width=80, height=50)
     Label(root, bg='white', text="v1.0.3").place(x=580, y=450, width=60, height=30)
 
     mainloop()
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
